@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("manipulacaoStrings")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3e66660daa2d47fba7fdb23a9f24e0c0bf82c15")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3faddbc1f9858e57834522fef297c5a33214bb62")]
 [assembly: System.Reflection.AssemblyProductAttribute("manipulacaoStrings")]
 [assembly: System.Reflection.AssemblyTitleAttribute("manipulacaoStrings")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

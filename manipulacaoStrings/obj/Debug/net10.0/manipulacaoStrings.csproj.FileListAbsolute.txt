@@ -1,0 +1,15 @@
+/home/ubuntu/dev/uc00606_ms/manipulacaoStrings/bin/Debug/net10.0/manipulacaoStrings
+/home/ubuntu/dev/uc00606_ms/manipulacaoStrings/bin/Debug/net10.0/manipulacaoStrings.deps.json
+/home/ubuntu/dev/uc00606_ms/manipulacaoStrings/bin/Debug/net10.0/manipulacaoStrings.runtimeconfig.json
+/home/ubuntu/dev/uc00606_ms/manipulacaoStrings/bin/Debug/net10.0/manipulacaoStrings.dll
+/home/ubuntu/dev/uc00606_ms/manipulacaoStrings/bin/Debug/net10.0/manipulacaoStrings.pdb
+/home/ubuntu/dev/uc00606_ms/manipulacaoStrings/obj/Debug/net10.0/manipulacaoStrings.GeneratedMSBuildEditorConfig.editorconfig
+/home/ubuntu/dev/uc00606_ms/manipulacaoStrings/obj/Debug/net10.0/manipulacaoStrings.AssemblyInfoInputs.cache
+/home/ubuntu/dev/uc00606_ms/manipulacaoStrings/obj/Debug/net10.0/manipulacaoStrings.AssemblyInfo.cs
+/home/ubuntu/dev/uc00606_ms/manipulacaoStrings/obj/Debug/net10.0/manipulacaoStrings.csproj.CoreCompileInputs.cache
+/home/ubuntu/dev/uc00606_ms/manipulacaoStrings/obj/Debug/net10.0/manipulacaoStrings.sourcelink.json
+/home/ubuntu/dev/uc00606_ms/manipulacaoStrings/obj/Debug/net10.0/manipulacaoStrings.dll
+/home/ubuntu/dev/uc00606_ms/manipulacaoStrings/obj/Debug/net10.0/refint/manipulacaoStrings.dll
+/home/ubuntu/dev/uc00606_ms/manipulacaoStrings/obj/Debug/net10.0/manipulacaoStrings.pdb
+/home/ubuntu/dev/uc00606_ms/manipulacaoStrings/obj/Debug/net10.0/manipulacaoStrings.genruntimeconfig.cache
+/home/ubuntu/dev/uc00606_ms/manipulacaoStrings/obj/Debug/net10.0/ref/manipulacaoStrings.dll

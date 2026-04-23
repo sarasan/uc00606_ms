@@ -9,6 +9,10 @@ class Program
     {
         
           Console.WriteLine("Fundamentos de Programação C#\n");
+
+          AlunoManipulacaoStrings alunoManipulacaoStrings = new AlunoManipulacaoStrings();
+
+          alunoManipulacaoStrings.Executar();
     }
 
 }
