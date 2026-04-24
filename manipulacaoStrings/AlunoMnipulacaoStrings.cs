@@ -34,23 +34,39 @@ public class AlunoManipulacaoStrings
 
        Console.WriteLine("Insira um a frase");
 
-      string frase2 = Console.ReadLine();
+      string original = Console.ReadLine();
 
-      for(int i = frase2.Length -1; i>=0; i--)
+      string reversed = string.Empty;
+
+      for(int i = original.Length -1; i>=0; i--)
     {
-      //Console.WriteLine(frase2);
-      Console.WriteLine($"{frase2[i]}");
+        reversed += original[i];
     }
-    /*            Console.Write("Enter a String : ");
-            string originalString = Console.ReadLine();
-            string reverseString = string.Empty;
-            for (int i = originalString.Length - 1; i >= 0; i--)
-            {
-                reverseString += originalString[i];
-            }
-            Console.Write($"Reverse String is : {reverseString} ");
-            Console.ReadLine();*/
 
+    Console.WriteLine($"Original : {original}");
+
+    Console.WriteLine($"Invertida: {reversed}");
+
+ /*
+      // ===================================================
+      // EXERCÍCIO 3: Verificar palíndromo
+      // ===================================================
+      // 👉 O QUE FAZER:
+      // 1. Solicitar uma palavra ao usuário
+      // 2. Verificar se é palíndromo (lê-se igual de trás para frente)
+      // 3. Comparar caractere da esquerda com caractere da direita
+      // 4. Percorrer apenas até a metade da palavra
+      //
+      // 💡 palavra[i] != palavra[palavra.Length - 1 - i]
+
+      Console.WriteLine("\n📝 Exercício 3: Verificação de palíndromo");
+      Console.Write("Digite uma palavra: ");
+
+      // ESCREVA SEU CÓDIGO AQUI
+      //Saida
+      /**� Exercício 3: Verificação de palíndromo
+      Palavra: 'radar'
+      É palíndromo? True*/*/
 
     }
 
