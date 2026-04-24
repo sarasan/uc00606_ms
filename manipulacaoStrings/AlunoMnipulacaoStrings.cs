@@ -28,9 +28,28 @@ public class AlunoManipulacaoStrings
 
       Console.WriteLine("===============================================");
 
-      Console.WriteLine("EXERCÍCIO 2: Contar vogais");
+      Console.WriteLine("EXERCÍCIO 2: Inverter string ");
       
       Console.WriteLine("===============================================");
+
+       Console.WriteLine("Insira um a frase");
+
+      string frase2 = Console.ReadLine();
+
+      for(int i = frase2.Length -1; i>=0; i--)
+    {
+      //Console.WriteLine(frase2);
+      Console.WriteLine($"{frase2[i]}");
+    }
+    /*            Console.Write("Enter a String : ");
+            string originalString = Console.ReadLine();
+            string reverseString = string.Empty;
+            for (int i = originalString.Length - 1; i >= 0; i--)
+            {
+                reverseString += originalString[i];
+            }
+            Console.Write($"Reverse String is : {reverseString} ");
+            Console.ReadLine();*/
 
 
     }
@@ -44,7 +63,6 @@ public class AlunoManipulacaoStrings
                               vg == 'U');
     }
 
-    // Returns count of vowels in str 
     public static int contaVogal(string str)
     {
         int count = 0;
@@ -52,7 +70,6 @@ public class AlunoManipulacaoStrings
         for (int i = 0; i < str.Length; i++)
         {
             
-            // Check for vowel
             if (Vogal(str[i])) 
             {
                 ++count;
