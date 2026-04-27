@@ -1,3 +1,6 @@
+using System.ComponentModel;
+using System.Globalization;
+
 namespace ExerciciosAula02;
 
 public class AlunoFuncoesMetodos
@@ -15,7 +18,7 @@ public class AlunoFuncoesMetodos
       Console.WriteLine("===============================================");
 
         
-        Console.WriteLine("Insira um numero para calcular o factorial: ");
+        Console.WriteLine("Insira um numero para calcular o factorial: \n");
 
         int num = Convert.ToInt32(Console.ReadLine());
 
@@ -37,7 +40,30 @@ public class AlunoFuncoesMetodos
 
         bool primo = VerificarPrimo(numb);
 
-        Console.WriteLine($"Numero: {numb} = {primo}");
+        Console.WriteLine($"{numb} primo? {primo}");
+
+        ///////////////////////////////////////
+        
+       Console.WriteLine("EXERCÍCIO 3: Função com parâmetros opcionais\n");
+      
+       Console.WriteLine("===============================================");
+
+       string nome = "ana";
+
+       SaudacaoPersonalizada(nome);
+
+       nome = "Bruno";
+
+       bool formal =true;
+
+       SaudacaoPersonalizada(nome, formal);
+
+
+
+
+
+      
+
   
     }
 
@@ -72,6 +98,21 @@ public static bool VerificarPrimo(int num)
         if (num % i == 0) return false; 
 
     return true;
+}
+
+public static  void SaudacaoPersonalizada(string nome = "Visitante", bool formal = false)
+
+{
+     if (formal == true) {
+     
+     Console.WriteLine($"Prezado(a) {nome}, seja bem-vindo(a)\n");
+     }
+
+     else{
+     
+     Console.WriteLine($"Olá {nome}! Bem-vindo(a)\n!");
+     }
+      
 }
   }
 
