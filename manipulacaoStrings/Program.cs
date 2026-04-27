@@ -13,6 +13,10 @@ class Program
           AlunoManipulacaoStrings alunoManipulacaoStrings = new AlunoManipulacaoStrings();
 
           alunoManipulacaoStrings.Executar();
+
+          AlunoFuncoesMetodos alunoFuncoesMetodos = new AlunoFuncoesMetodos();
+
+          
     }
 
 }
