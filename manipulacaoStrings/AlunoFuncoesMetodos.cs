@@ -59,16 +59,35 @@ public class AlunoFuncoesMetodos
        SaudacaoPersonalizada(nome, formal);
 
 
-
-
-
+///////////////////////////////////////
+        
+       Console.WriteLine("EXERCÍCIO 4: Ordenar array\n");
       
+       Console.WriteLine("===============================================");
 
-  
-    }
+       int []numeros=  [34, 7, 23, 32, 5, 62 ];
 
+       /*for(int i =0; i< numeros.Length; i++)
+        {
+        Console.WriteLine($"{numeros[i]}\n");
+
+            Array.Sort(numeros);
+
+            String.Join(", ", numeros);
+
+            Console.WriteLine(numeros);*/
+
+              reverseArray(numeros);
   
-    
+        for (int i = 0; i < numeros.Length; i++)
+
+            Console.Write(numeros[i] + " ");
+//////////////////////////////////
+            
+
+}
+
+
 
 
     public static long CalcularFactorial(int n) {
@@ -114,6 +133,26 @@ public static  void SaudacaoPersonalizada(string nome = "Visitante", bool formal
      }
       
 }
+
+ public static void reverseArray(int[] arr) {
+
+        int n = arr.Length;
+        
+        // Temporary array to store elements 
+        // in reversed order
+        int[] temp = new int[n];
+  
+        // Copy elements from original array 
+        // to temp in reverse order
+        for (int i = 0; i < n; i++)
+
+            temp[i] = arr[n - i - 1];
+  
+        // Copy elements back to original array
+        for (int i = 0; i < n; i++)
+
+            arr[i] = temp[i];
+  }
   }
 
 
