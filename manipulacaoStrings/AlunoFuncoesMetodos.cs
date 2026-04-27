@@ -10,7 +10,7 @@ public class AlunoFuncoesMetodos
 
       Console.WriteLine("===============================================");
 
-      Console.WriteLine("EXERCÍCIO 1: Fatorial");
+      Console.WriteLine("EXERCÍCIO 1: Fatorial\n");
       
       Console.WriteLine("===============================================");
 
@@ -27,26 +27,22 @@ public class AlunoFuncoesMetodos
 
 /////////////////////////////////////////////////////////////////
     
-      Console.WriteLine("EXERCÍCIO 2: Números primos");
+       Console.WriteLine("EXERCÍCIO 2: Números primos\n");
       
-      Console.WriteLine("===============================================");
+       Console.WriteLine("===============================================");
 
-        
-        Console.WriteLine("Insira um numero para calcular o factorial: ");
+        Console.WriteLine("Insira um numero para verificar se e primo:\n ");
 
+        int numb = Convert.ToInt32(Console.ReadLine());
 
-        int num2 = Convert.ToInt32(Console.ReadLine());
+        bool primo = VerificarPrimo(numb);
 
-        bool prime = IsPrime(num2);
-
-      Console.WriteLine(prime);
+        Console.WriteLine($"Numero: {numb} = {primo}");
   
     }
 
   
-     
-
-
+    
 
 
     public static long CalcularFactorial(int n) {
@@ -62,16 +58,18 @@ public class AlunoFuncoesMetodos
         return factorial;
     }
 
-public static bool IsPrime(int num)
+public static bool VerificarPrimo(int num)
 
 {
-    if (num <= 1) return false; // Not prime if less than or equal to 1
+    if (num <= 1) return false; 
 
-    if (num == 2) return true; // 2 is prime
 
-   for(int i = 2; i*i <= num; i++) // Start checking from 2
+    if (num == 2) return true; 
 
-        if (num % i == 0) return false; // Not prime if divisible by any i
+
+   for(int i = 2; i*i <= num; i++) 
+
+        if (num % i == 0) return false; 
 
     return true;
 }
