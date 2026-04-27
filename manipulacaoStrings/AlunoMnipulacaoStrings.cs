@@ -66,7 +66,7 @@ public class AlunoManipulacaoStrings
       //Saida
       /**� Exercício 3: Verificação de palíndromo
       Palavra: 'radar'
-      É palíndromo? True*/*/
+      É palíndromo? True*/
 
     }
 

@@ -10,13 +10,15 @@ class Program
         
           Console.WriteLine("Fundamentos de Programação C#\n");
 
-          AlunoManipulacaoStrings alunoManipulacaoStrings = new AlunoManipulacaoStrings();
+          //AlunoManipulacaoStrings alunoManipulacaoStrings = new AlunoManipulacaoStrings();
 
-          alunoManipulacaoStrings.Executar();
+          //alunoManipulacaoStrings.Executar();
 
           AlunoFuncoesMetodos alunoFuncoesMetodos = new AlunoFuncoesMetodos();
 
-          
+          alunoFuncoesMetodos.Executar();
+
+
     }
 
 }
