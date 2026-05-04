@@ -67,26 +67,19 @@ public class AlunoFuncoesMetodos
 
        int []numeros=  [34, 7, 23, 32, 5, 62 ];
 
-       /*for(int i =0; i< numeros.Length; i++)
-        {
-        Console.WriteLine($"{numeros[i]}\n");
-
-            Array.Sort(numeros);
-
-            String.Join(", ", numeros);
-
-            Console.WriteLine(numeros);*/
 
               reverseArray(numeros);
   
         for (int i = 0; i < numeros.Length; i++)
 
             Console.Write(numeros[i] + " ");
-//////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////
+/// //////////////////////////////////////
+/// LISTAS
             
 
 }
-
 
 
 

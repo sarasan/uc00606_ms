@@ -14,9 +14,13 @@ class Program
 
           //alunoManipulacaoStrings.Executar();
 
-          AlunoFuncoesMetodos alunoFuncoesMetodos = new AlunoFuncoesMetodos();
+          //AlunoFuncoesMetodos alunoFuncoesMetodos = new AlunoFuncoesMetodos();
 
-          alunoFuncoesMetodos.Executar();
+          //alunoFuncoesMetodos.Executar();
+
+          ClassesMetodosListas classesMetodosListas = new ClassesMetodosListas();
+
+          classesMetodosListas.Executar();
 
 
     }
