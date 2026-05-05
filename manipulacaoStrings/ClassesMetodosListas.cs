@@ -68,33 +68,21 @@ Console.WriteLine("EXERCÍCIO 2: Remover pessoa pelo nome");
    Console.WriteLine("==================================================="); 
     Console.WriteLine("EXERCÍCIO 3: Filtrar pessoas com mais de 30 anos");
    Console.WriteLine("===================================================");
-    // 👉 O QUE FAZER:
-    // 1. Usar o método FindAll() para filtrar a lista
-    // 2. Buscar todas as pessoas com idade > 30
-    // 3. Exibir o resultado Console.WriteLine($".....Seu C");
-    //
-     List<Pessoa> filtradas = pessoas.FindAll(p => p.Idade > 30);
-
+ 
     // 💡 Também pode usar LINQ: pessoas.Where(p => p.Idade > 30).ToList()
 
-    Console.WriteLine("\n📝 Exercício 3: Filtrat pessoas com mais de 30 anos");
+      List<Pessoa> filtradas = pessoas.FindAll(p => p.Idade > 30);
+
+    Console.WriteLine("\n Exercício 3: Filtrar pessoas com mais de 30 anos");
 
     foreach( var p in pessoas)
 
         {
-            
+        
             Console.WriteLine($"{p}");
         }
 
-    // ESCREVA SEU CÓDIGO AQUI - Filtrar pessoas com idade > 30
 
-
-    //Saida esperada:
-    /**📝 Exercício 3: Buscar pessoas com mais de 30 anos
-    Pessoas com mais de 30 anos (3):
-      - Carla (35 anos)
-      - Eduarda (40 anos)
-      - Gabriela (45 anos)*/
     Console.WriteLine();
 
   }
