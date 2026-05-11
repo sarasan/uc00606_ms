@@ -18,9 +18,13 @@ class Program
 
           //alunoFuncoesMetodos.Executar();
 
-          ClassesMetodosListas classesMetodosListas = new ClassesMetodosListas();
+          //ClassesMetodosListas classesMetodosListas = new ClassesMetodosListas();
 
-          classesMetodosListas.Executar();
+          //classesMetodosListas.Executar();
+
+          LocalHashSet localHashSet = new LocalHashSet();
+
+          localHashSet.ExecutaHashSet();
 
 
     }

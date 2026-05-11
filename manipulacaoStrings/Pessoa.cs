@@ -3,8 +3,8 @@ using ExerciciosAula02;
 public class Pessoa
   {
      //Atributos públicos para facilitar o acesso
-    public string Nome;
-    public int Idade;
+    public string Nome{get;set;}
+    public int Idade{get;set;}
 
     //Construtor para facilitar a criação de objetos
     // O construtor é um método especial que é chamado quando criamos um novo objeto da classe. Ele é usado para inicializar os atributos do objeto.
@@ -21,4 +21,19 @@ public class Pessoa
     {
       return $"{Nome} ({Idade} anos)";
     }
+
+      public override bool  Equals(object? obj)
+    {
+        if(obj == null)
+        {
+            return false;
+        }
+
+        if (obj is not Pessoa outraPessoa)
+    {
+      return false;
+    }
+    return  Nome == outraPessoa.Nome && Idade == outraPessoa.Idade;
+    }
+
   }
