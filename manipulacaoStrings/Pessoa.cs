@@ -22,6 +22,7 @@ public class Pessoa
       return $"{Nome} ({Idade} anos)";
     }
 
+
       public override bool  Equals(object? obj)
     {
         if(obj == null)
@@ -36,4 +37,12 @@ public class Pessoa
     return  Nome == outraPessoa.Nome && Idade == outraPessoa.Idade;
     }
 
+   public override int GetHashCode()
+    {
+        return HashCode.Combine(Nome, Idade);
+    }
+
+
+    public void Apresentar() => Console.WriteLine($"Nome: {this.Nome}, Idade: {this.Idade}");
+ 
   }

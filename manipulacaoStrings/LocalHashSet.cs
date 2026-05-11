@@ -34,12 +34,14 @@ HashSet<Pessoa> pessoas = new HashSet<Pessoa>();
 
         pessoas.Add(new Pessoa("p4",40));
 
+         pessoas.Add(new Pessoa("tony",40));
+
         Console.WriteLine("Conjunto de Pessoa HashSet()");
 
         foreach(var pessoa in pessoas)
         {
             
-        Console.WriteLine("Conjunto de Pessoas {pessoa.Nome} com idade{pessoa.Idade}temos a propriedade Pessoa: {pessoa.Apresentar}");
+        Console.WriteLine($"Conjunto de Pessoas {pessoa.Nome} com idade{pessoa.Idade} temos a propriedade Pessoa: {pessoa.Apresentar}");
 
         }
     // =========================================================
