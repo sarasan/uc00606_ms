@@ -22,9 +22,13 @@ class Program
 
           //classesMetodosListas.Executar();
 
-          LocalHashSet localHashSet = new LocalHashSet();
+          //LocalHashSet localHashSet = new LocalHashSet();
 
-          localHashSet.ExecutaHashSet();
+          //localHashSet.ExecutaHashSet();
+
+          AlunoExercicio04 alunoExercicio04= new AlunoExercicio04();
+
+          alunoExercicio04.Executar();
 
 
     }
