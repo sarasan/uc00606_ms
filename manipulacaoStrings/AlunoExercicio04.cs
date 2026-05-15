@@ -18,7 +18,6 @@ public class AlunoExercicio04
       return $"{Nome} ({Idade} anos)";
     }
 
-    // Necessário para HashSet comparar corretamente os objetos
     public override bool Equals(object obj)
     {
       if (obj is Pessoa outra)
@@ -34,41 +33,14 @@ public class AlunoExercicio04
 
   public void Executar()
   {
-    Console.WriteLine("\n\n🎯 4. EXERCÍCIOS DE SET (HASHSET<T>)");
+    Console.WriteLine("\n\n EXERCÍCIOS DE SET (HASHSET<T>)");
     Console.WriteLine("====================================\n");
 
-    // ===================================================
-    // EXERCÍCIO 1: HashSet com números inteiros e repetidos
-    // ===================================================
-    // 👉 O QUE FAZER:
-    // 1. Criar um HashSet<int> chamado numeros
-    // 2. Adicionar os números: 10, 20, 30, 20, 40, 10, 50
-    // 3. Exibir todos os elementos (observar que repetidos não entram)
-    // 4. Exibir a quantidade total de elementos
-    //
-    // 💡 HashSet não permite elementos duplicados
-    // 💡 O método Add() retorna false se o elemento já existe
 
-    Console.WriteLine("📝 Exercício 1: HashSet com números inteiros");
+    Console.WriteLine(" Exercício 1: HashSet com números inteiros");
+
     Console.WriteLine("Os números a adicionar: 10, 20, 30, 20, 40, 10, 50");
 
-    // ESCREVA SEU CÓDIGO AQUI
-
-    //Saida esperada:
-    /**📝 Exercício 1: HashSet com números inteiros
-    Os números a adicionar: 10, 20, 30, 20, 40, 10, 50
-
-    Resultado das adições:
-      10 adicionado? True
-      20 adicionado? True
-      30 adicionado? True
-      20 (2ª vez) adicionado? False
-      40 adicionado? True
-      10 (2ª vez) adicionado? False
-      50 adicionado? True
-
-    Elementos no HashSet: 10, 20, 30, 40, 50
-    Quantidade de elementos: 5*/
 
     Console.WriteLine();
 
@@ -90,25 +62,13 @@ public class AlunoExercicio04
   Console.WriteLine(n);
   }
 
-  // 4. Exibir a quantidade total de elementos
   Console.WriteLine($"\nQuantidade total de elementos: {numeros.Count}");
   
 
-    // ===================================================
-    // EXERCÍCIO 2: Diferença entre ExceptWith() e SymmetricExceptWith()
-    // ===================================================
-    // 👉 O QUE FAZER:
-    // 1. Criar dois HashSets: conjuntoA = {1, 2, 3, 4, 5} e conjuntoB = {4, 5, 6, 7, 8}
-    // 2. Mostrar ExceptWith() - remove do conjuntoA os elementos que estão em conjuntoB
-    // 3. Mostrar SymmetricExceptWith() - remove os elementos que estão em ambos (diferença simétrica)
-    //
-    // 💡 ExceptWith() = A - B (elementos que estão em A mas não em B)
-    // 💡 SymmetricExceptWith() = (A - B) ∪ (B - A) (elementos que estão em A ou B, mas não em ambos)
-
-    Console.WriteLine("\n📝 Exercício 2: Diferença entre ExceptWith() e SymmetricExceptWith()");
-
-    // ESCREVA SEU CÓDIGO AQUI
-  ////  ///////////////////////////
+  Console.WriteLine(" \n===================================================");
+   Console.WriteLine ("EXERCÍCIO 2: Diferença entre ExceptWith() e SymmetricExceptWith()\n");
+   Console.WriteLine("\n===================================================");
+   
  
         var conjuntoA = new HashSet<int> { 1, 2, 3, 4, 5 };
 
@@ -123,21 +83,21 @@ public class AlunoExercicio04
 
         aExceptw.ExceptWith(conjuntoB);
 
-        Console.WriteLine(" ExceptWith (A - B): " + string.Join(", ", aExceptw));
+        Console.WriteLine(" ExceptWith (A - B)- Elementos em A mas não em B : " + string.Join(", ", aExceptw));
 
        
         var aSymmetricw = new HashSet<int>(conjuntoA);
 
         aSymmetricw.SymmetricExceptWith(conjuntoB);
 
-        Console.WriteLine(" SymmetricExceptWith ((A - B) ∪ (B - A)): " + string.Join(", ", aSymmetricw));
+        Console.WriteLine(" SymmetricExceptWith ((A - B) ∪ (B - A)-  Diferença simétrica): " + string.Join(", ", aSymmetricw));
     
 
 
 
 
     //Saida esperada:
-    /**📝 Exercício 2: Diferença entre ExceptWith() e SymmetricExceptWith()
+    /** Exercício 2: Diferença entre ExceptWith() e SymmetricExceptWith()
     Conjunto A original: 1, 2, 3, 4, 5
     Conjunto B original: 4, 5, 6, 7, 8
 
