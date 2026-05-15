@@ -34,7 +34,7 @@ HashSet<Pessoa> pessoas = new HashSet<Pessoa>();
 
         pessoas.Add(new Pessoa("p4",40));
 
-         pessoas.Add(new Pessoa("tony",40));
+        pessoas.Add(new Pessoa("tony",40));
 
         Console.WriteLine("Conjunto de Pessoa HashSet()");
 

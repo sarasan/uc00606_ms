@@ -92,22 +92,11 @@ public class AlunoExercicio04
 
         Console.WriteLine(" SymmetricExceptWith ((A - B) ∪ (B - A)-  Diferença simétrica): " + string.Join(", ", aSymmetricw));
     
-
-
-
-
-    //Saida esperada:
-    /** Exercício 2: Diferença entre ExceptWith() e SymmetricExceptWith()
-    Conjunto A original: 1, 2, 3, 4, 5
-    Conjunto B original: 4, 5, 6, 7, 8
-
-    ExceptWith() - Elementos em A mas não em B: 1, 2, 3
-    SymmetricExceptWith() - Diferença simétrica: 1, 2, 3, 6, 7, 8*/
     Console.WriteLine();
 
-    // ===================================================
-    // EXERCÍCIO 3: União, Interseção e Diferença entre conjuntos de pessoas
-    // ===================================================
+    Console.WriteLine("===================================================") ;
+    Console.WriteLine("EXERCÍCIO 3: União, Interseção e Diferença entre conjuntos de pessoas");
+    Console.WriteLine("===================================================");
     // 👉 O QUE FAZER:
     // 1. Criar HashSet<Pessoa> para equipeA e equipeB
     // 2. Adicionar pessoas em cada equipe
@@ -122,102 +111,57 @@ public class AlunoExercicio04
 
     Console.WriteLine("\n📝 Exercício 3: Operações com conjuntos de pessoas");
 
-    // ESCREVA SEU CÓDIGO AQUI
+        HashSet<Pessoa>equipaA = new HashSet<Pessoa>();
 
-/*using System;
-using System.Collections.Generic;
+        HashSet<Pessoa> equipaB = new HashSet<Pessoa>();
 
-record Pessoa(string Nome, int Id); // record fornece igualdade por valor (Nome+Id)
 
-class Program
-{
-    static void Main()
-    {
-        // 1. Criar HashSet<Pessoa> para equipeA e equipeB
-        var equipeA = new HashSet<Pessoa>();
-        var equipeB = new HashSet<Pessoa>();
+        equipaA.Add(new Pessoa("Ana", 25));
 
-        // 2. Adicionar pessoas em cada equipe
-        var p1 = new Pessoa("Ana", 1);
-        var p2 = new Pessoa("Bruno", 2);
-        var p3 = new Pessoa("Carla", 3);
-        var p4 = new Pessoa("Daniel", 4);
-        var p5 = new Pessoa("Eva", 5);
+        equipaA.Add(new Pessoa("Bruno", 30));
 
-        // equipeA: Ana, Bruno, Carla
-        equipeA.Add(p1);
-        equipeA.Add(p2);
-        equipeA.Add(p3);
+        equipaA.Add(new Pessoa("Carla", 35));
 
-        // equipeB: Carla, Daniel, Eva
-        equipeB.Add(p3); // mesma instância ou mesmo valor — igualidade do record garante unicidade
-        equipeB.Add(p4);
-        equipeB.Add(p5);
+        equipaA.Add(new Pessoa("Daniel", 40));
 
-        // Exibir conteúdos iniciais
-        Console.WriteLine("Equipe A:");
-        foreach (var p in equipeA) Console.WriteLine($"- {p.Nome} (Id {p.Id})");
-        Console.WriteLine("\nEquipe B:");
-        foreach (var p in equipeB) Console.WriteLine($"- {p.Nome} (Id {p.Id})");
+        equipaB.Add(new Pessoa("Carla", 35));
 
-        // 3a. União: A ∪ B (não modificar originais — criar cópia)
-        var uniao = new HashSet<Pessoa>(equipeA);
-        uniao.UnionWith(equipeB);
+        equipaB.Add(new Pessoa("Daniel", 40));
+
+        equipaB.Add(new Pessoa("Eduarda", 40));
+
+        equipaB.Add(new Pessoa("Fernando", 22));
+
+
+        Console.WriteLine("Equipa A:");
+        foreach (var p in equipaA) Console.WriteLine($"Nome: {p.Nome} | Idade: {p.Idade}");
+        Console.WriteLine("\nEquipa B:");
+        foreach (var p in equipaB) Console.WriteLine($"Nome: {p.Nome} | Idade: {p.Idade}");
+
+
+        HashSet<Pessoa> uniao = new HashSet<Pessoa>(equipaA);
+        uniao.UnionWith(equipaB);
         Console.WriteLine("\nUnião (A ∪ B):");
-        foreach (var p in uniao) Console.WriteLine($"- {p.Nome} (Id {p.Id})");
+        foreach (var p in uniao) Console.WriteLine($"Nome: {p.Nome} | Idade: {p.Idade}");
 
-        // 3b. Interseção: A ∩ B (pessoas em ambos)
-        var intersecao = new HashSet<Pessoa>(equipeA);
-        intersecao.IntersectWith(equipeB);
+
+        HashSet<Pessoa> intersecao = new HashSet<Pessoa>(equipaA);
+        intersecao.IntersectWith(equipaB);
         Console.WriteLine("\nInterseção (A ∩ B):");
-        foreach (var p in intersecao) Console.WriteLine($"- {p.Nome} (Id {p.Id})");
+        foreach (var p in intersecao) Console.WriteLine($"Nome: {p.Nome} | Idade: {p.Idade}");
 
-        // 3c. Diferença: A - B (em A que não estão em B)
-        var diferenca = new HashSet<Pessoa>(equipeA);
-        diferenca.ExceptWith(equipeB);
+
+        HashSet<Pessoa> diferenca = new HashSet<Pessoa>(equipaA);
+        diferenca.ExceptWith(equipaB);
         Console.WriteLine("\nDiferença (A - B):");
-        foreach (var p in diferenca) Console.WriteLine($"- {p.Nome} (Id {p.Id})");
+        foreach (var p in diferenca) Console.WriteLine($"Nome: {p.Nome} | Idade: {p.Idade}");
 
-        // Observação: HashSet usa igualdade (Equals/GetHashCode). 'record' já implementa por valor.
-    }
-}
-*/
-
-    //Saida esperada:
-    /**📝 Exercício 3: Operações com conjuntos de pessoas
-
-    Equipe A:
-      - Ana (25 anos)
-      - Bruno (30 anos)
-      - Carla (35 anos)
-      - Daniel (28 anos)
-
-    Equipe B:
-      - Carla (35 anos)
-      - Daniel (28 anos)
-      - Eduarda (40 anos)
-      - Fernando (22 anos)
-
-    União (EquipeA ∪ EquipeB):
-      - Ana (25 anos)
-      - Bruno (30 anos)
-      - Carla (35 anos)
-      - Daniel (28 anos)
-      - Eduarda (40 anos)
-      - Fernando (22 anos)
-
-    Interseção (EquipeA ∩ EquipeB):
-      - Carla (35 anos)
-      - Daniel (28 anos)
-
-    Diferença (EquipeA - EquipeB):
-      - Ana (25 anos)
-      - Bruno (30 anos)*/
+   
     Console.WriteLine();
 
-    // ===================================================
-    // EXERCÍCIO 4: Verificar subconjunto com IsSubsetOf()
-    // ===================================================
+    Console.WriteLine("==================================================="); 
+    Console.WriteLine("EXERCÍCIO 4: Verificar subconjunto com IsSubsetOf()");
+    Console.WriteLine("==================================================="); 
     // 👉 O QUE FAZER:
     // 1. Criar dois conjuntos: conjuntoPrincipal e conjuntoSub
     // 2. Verificar se conjuntoSub é subconjunto de conjuntoPrincipal
@@ -286,6 +230,7 @@ class Program
     Console.WriteLine("hashSet.IsSubsetOf(outro)     → verificar se é subconjunto");
     Console.WriteLine("hashSet.IsSupersetOf(outro)   → verificar se é superconjunto");
     Console.WriteLine("hashSet.Count                → quantidade de elementos");*/
-  }
-}
+   }
+   }
+
 
